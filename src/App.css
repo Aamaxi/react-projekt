@@ -11,34 +11,57 @@ html, body {
   font-family: Arial, sans-serif;
 }
 
-.App {
-  display: flex;
-  flex-direction: row;
-  gap: 3rem;
-  align-items: center;
-}
-
 .font-display {
   font-family: 'Roboto', sans-serif;
   font-size: 5rem;
   color: #000000;
 }
 
-.font-header {
+.font-header1 {
   font-family: 'Roboto', sans-serif;
   font-size: 3rem;
   color: #000000;
 }
 
+.font-header2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.5rem;
+  color: #000000;
+}
+
+.icon {
+  max-height: 100%;
+}
+
+/* App */
+.App {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  gap: 3rem;
+  max-width: 100%;
+  justify-content: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+/* Navbar */
 .navbar {
   display: flex;
   justify-content: left;
   flex-direction: column;
-  width: 20rem;
+  max-width: 20rem;
   height: 100vh;
   background-color: #dbdbdb;
   color: #ffffff;
   padding: 1rem 1.5rem;
+  flex: 1;
 }
 
 .navbar-button {
@@ -53,7 +76,6 @@ html, body {
   padding: 0.5em 0.5em;
   font-size: 1.5rem;
   cursor: pointer;
-  border-radius: 10px;
   width: 100%;
 }
 
@@ -61,16 +83,12 @@ html, body {
   background-color: #f0f0f0;
 }
 
-.navbar-icon {
-  max-height: 100%;
-}
-
 .navbar-container {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   margin-bottom: auto;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 
 .navbar-buttonDropdown {
@@ -114,9 +132,152 @@ html, body {
   z-index: 1;
 }
 
+/* Linup preview */
 .lineup-preview {
   height: 95vh;
-  width: 30rem;
+  max-width: 30rem;
   background-color: #f0f0f0;
   padding: 1rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 1.5rem;
+  cursor: pointer;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.lineup-preview:hover {
+  background-color: #e0e0e0;
+}
+
+.lineup-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.lineup-button {
+  background-color: #ffffff;
+  color: #000000;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 3rem;
+  border: none;
+  padding: 0.5em 0.5em;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.lineup-button-container {
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.lineup-preview:hover .lineup-button {
+  background-color: #eeeeee;
+}
+
+/* Calendar preview */
+
+.calendar-preview {
+  height: 95vh;
+  max-width: 30rem;
+  background-color: #f0f0f0;
+  padding: 1rem 1.5rem;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  overflow: hidden;
+  overflow-y: auto;
+  cursor: pointer;
+}
+
+.calendar-preview:hover {
+  background-color: #e0e0e0;
+}
+
+.calendar-preview-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.calendar-preview-event {
+  background-color: #ffffff;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.5em 0.5em;
+}
+
+.calendar-preview:hover .calendar-preview-event {
+  background-color: #eeeeee;
+}
+
+/* Calendar */
+
+.calendar {
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-color: #f0f0f0;
+}
+
+.calendar-font {
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.calendar-container {
+  display: grid;
+  grid-template-columns: 3rem repeat(6, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  width: 100%;
+  flex-grow: 1;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+
+.calendar-week {
+  grid-row: span 5;
+  justify-content: center;
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  padding-top: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+}
+
+.calendar-day {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1.5rem;
+  background-color: #ffffff;
+}
+
+/* lineup-stats */
+
+.lineup-stats {
+  height: 95vh;
+  max-width: 30rem;
+  background-color: #f0f0f0;
+  padding: 1rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+}
+
+.lineup-stats-container {
+  display: grid;
+  
 }
