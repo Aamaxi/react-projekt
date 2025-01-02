@@ -1,8 +1,9 @@
 import LineupButton from './LineupButton';
+import { Link } from 'react-router-dom';
 
 function LineUpPreview() {
   return (
-    <a className="lineup-preview">
+    <Link className="lineup-preview link" to="/lineup">
       <h2 className="font-header1">Line up</h2>
       <section className="lineup-container">
         <h3>Line up</h3>
@@ -26,7 +27,7 @@ function LineUpPreview() {
         <LineupButton number="15" player="Foden" icon="/logo192.png"/>
         <LineupButton number="16" player="Haaland" icon="/logo192.png"/>
       </section>
-    </a>
+    </Link>
   );
 }
 
