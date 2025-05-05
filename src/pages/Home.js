@@ -8,10 +8,10 @@ function Home() {
     <>
       <CompactNavbar />
       <Navbar />
-      <div className="app-container">
+      <main className="app-container">
         <CalendarPreview />
         <LineUpPreview />
-      </div>
+      </main>
     </>
   );
 }

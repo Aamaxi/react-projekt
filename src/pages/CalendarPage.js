@@ -9,9 +9,9 @@ function CalendarPage() {
     <>
       <CompactNavbar />
       <Navbar />
-      <div className="app-container">
+      <main className="app-container">
         <CompactCalendar />
-      </div>
+      </main>
     </>
   );
 }

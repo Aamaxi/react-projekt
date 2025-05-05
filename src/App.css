@@ -5,6 +5,15 @@
   box-sizing: border-box;
 }
 
+:root {
+  --background-color: #ffffff;
+  --background-color-hover: #f0f0f0;
+  --background-color2: #f0f0f0;
+  --background-color2-hover: #e0e0e0;
+  --background-color-navbar: #dbdbdb;
+  --font-color: #000000;
+}
+
 html, body {
   width: 100%;
   height: 100%;
@@ -14,25 +23,25 @@ html, body {
 .font-display {
   font-family: 'Roboto', sans-serif;
   font-size: 5rem;
-  color: #000000;
+  color: var(--font-color);
 }
 
 .font-header1 {
   font-family: 'Roboto', sans-serif;
   font-size: 3rem;
-  color: #000000;
+  color: var(--font-color);
 }
 
 .font-header2 {
   font-family: 'Roboto', sans-serif;
   font-size: 2.5rem;
-  color: #000000;
+  color: var(--font-color);
 }
 
 .font-header3 {
   font-family: 'Roboto', sans-serif;
   font-size: 2rem;
-  color: #000000;
+  color: var(--font-color);
 }
 
 .icon {
@@ -41,7 +50,7 @@ html, body {
 
 .link {
   text-decoration: none;
-  color: #000000;
+  color: var(--font-color);
 }
 
 /* App */
@@ -120,8 +129,7 @@ html, body {
   flex-direction: column;
   width: 20rem;
   min-height: 100vh;
-  background-color: #dbdbdb;
-  color: #ffffff;
+  background-color: var(--background-color-navbar);
   padding: 1rem 1.5rem;
   flex: 1;
 }
@@ -133,8 +141,8 @@ html, body {
 .navbar-button {
   text-align: left;
   gap: 0.5rem;
-  background-color: #ffffff;
-  color: #000000;
+  background-color: var(--background-color);
+  color: var(--font-color);
   display: flex;
   align-items: center;
   border: none;
@@ -146,7 +154,7 @@ html, body {
 }
 
 .navbar-button:hover {
-  background-color: #f0f0f0;
+  background-color: var(--background-color-hover);
 }
 
 .navbar-container {
@@ -159,8 +167,7 @@ html, body {
 
 .navbar-buttonDropdown {
   text-align: left;
-  background-color: #ffffff;
-  color: #000000;
+  background-color: var(--background-color);
   display: flex;
   align-items: center;
   border: none;
@@ -173,7 +180,7 @@ html, body {
 }
 
 .navbar-buttonDropdown:hover {
-  background-color: #f0f0f0;
+  background-color: var(--background-color-hover);
 }
 
 .navbar-buttonDropdown-container {
@@ -192,7 +199,7 @@ html, body {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: var(--background-color2);
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -206,7 +213,7 @@ html, body {
   left: 0;
   width: 100%;
   height: 3rem;
-  background-color: #dbdbdb;
+  background-color: var(--background-color-navbar);
   display: none;
   flex-direction: row;
   align-items: center;
@@ -223,15 +230,15 @@ html, body {
 }
 
 .compact-navbar-button {
-  background-color: #ffffff;
-  color: #000000;
+  background-color: var(--background-color);
+  color: var(--font-color);
   padding: 0.5em 0.5em;
   border: none;
   cursor: pointer;
 }
 
 .compact-navbar-button:hover {
-  background-color: #f0f0f0;
+  background-color: var(--background-color-hover);
 }
 
 .compact-navbar-icon {
@@ -243,19 +250,18 @@ html, body {
 .lineup-preview {
   height: 95vh;
   max-width: 30rem;
-  background-color: #f0f0f0;
+  background-color: var(--background-color2);
   padding: 1rem 1.5rem;
   display: flex;
   flex-direction: column;
   flex: 1;
   gap: 1.5rem;
-  cursor: pointer;
   overflow: hidden;
   overflow-y: auto;
 }
 
 .lineup-preview:hover {
-  background-color: #e0e0e0;
+  background-color: var(--background-color2-hover);
 }
 
 .lineup-container {
@@ -265,8 +271,8 @@ html, body {
 }
 
 .lineup-button {
-  background-color: #ffffff;
-  color: #000000;
+  background-color: var(--background-color);
+  color: var(--font-color);
   width: 100%;
   display: flex;
   align-items: center;
@@ -293,7 +299,7 @@ html, body {
 .calendar-preview {
   height: 95vh;
   max-width: 30rem;
-  background-color: #f0f0f0;
+  background-color: var(--background-color2);
   padding: 1rem 1.5rem;
   display: flex;
   flex: 1;
@@ -304,7 +310,7 @@ html, body {
 }
 
 .calendar-preview:hover {
-  background-color: #e0e0e0;
+  background-color: var(--background-color2-hover);
 }
 
 .calendar-preview-container {
@@ -316,7 +322,7 @@ html, body {
 }
 
 .calendar-preview-event {
-  background-color: #ffffff;
+  background-color: var(--background-color);
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -375,7 +381,7 @@ html, body {
 
 .lineup-stats {
   height: 95vh;
-  background-color: #f0f0f0;
+  background-color: var(--background-color2);
   padding: 1rem 1.5rem;
   display: flex;
   flex-direction: row;
@@ -399,7 +405,7 @@ html, body {
   display: flex;
   flex-direction: column;
   flex: 1;
-  background-color: #ffffff;
+  background-color: var(--background-color);
   gap: 0.5rem;
   max-width: 100%;
   padding: 1rem 1.5rem;

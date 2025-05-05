@@ -8,10 +8,10 @@ function Lineup() {
     <>
       <CompactNavbar />
       <Navbar />
-      <div className="app-container">
+      <main className="app-container">
         <LineupPreview />
         <LineupStats name="Lionel Messi" image="/messi_headshot.png" position="Position: FW" matches="Matches (W/L/D): 300/100/20"/>
-      </div>
+      </main>
     </>
   );
 }

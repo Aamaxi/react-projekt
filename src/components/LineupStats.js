@@ -1,6 +1,6 @@
 function LineupStats({ name, image, position, matches}) {
   return (
-    <div className="lineup-stats">
+    <section className="lineup-stats">
       <h3 className="font-header2 font-lineup">Lineup Stats</h3>
         <div className="lineup-stats-content">
           <div className="lineup-stats-container">
@@ -43,7 +43,7 @@ function LineupStats({ name, image, position, matches}) {
             <div className="lineup-p-container"><p>Age</p><p>28</p></div>
           </div>
         </div>
-    </div>
+    </section>
   );
 }
 

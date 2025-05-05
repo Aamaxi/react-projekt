@@ -4,7 +4,7 @@ function Calendar() {
   const days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
   
   return (
-    <div className="calendar">
+    <section className="calendar">
       <h3 className="font-header2 calendar-font">10/2024</h3>
       <div className="calendar-container">
         <div className="calendar-week">
@@ -18,7 +18,7 @@ function Calendar() {
           <CalendarDay key={i} day={`${i + 1} / ${days[(i % 7)]}`} />
         ))}
       </div>
-    </div>
+    </section>
   );
 }
 
